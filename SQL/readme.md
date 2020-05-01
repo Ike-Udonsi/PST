@@ -1,1 +1,1 @@
-Contails SQL Code
+SQL Training

@@ -1,2 +1,1 @@
-# PST
 Python + SQL + Tableau

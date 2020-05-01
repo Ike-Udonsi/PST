@@ -1,1 +1,1 @@
-Python + SQL + Tableau
+Python + SQL + Tableau: Personal training via online courses on Udemy and W3Schools.

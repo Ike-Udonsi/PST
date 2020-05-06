@@ -14,6 +14,10 @@ DELIMITER ;
 CALL employees.select_employees();
 CALL select_employees();
 
+# Create a procedure that will provide the average salary of all employees.
+USE employees;
+DROP PROCEDURE IF EXISTS avg_salary;
+
 DELIMITER $$
 CREATE PROCEDURE avg_salary() 
 BEGIN 
@@ -79,6 +83,8 @@ DELIMITER ;
 CALL employees.emp_avg_salary_out(11300, @p_avg_salary);
 SELECT @p_avg_salary;
 
+# Create a procedure called ‘emp_info’ that uses as parameters the first and 
+# the last name of an individual, and returns their employee number.
 USE employees;
 DROP PROCEDURE IF EXISTS emp_info;
 
@@ -126,6 +132,9 @@ DELIMITER ;
 
 SELECT F_EMP_AVG_SALARY(11300);
 
+
+# Create a function called ‘emp_info’ that takes for parameters the first and 
+# last name of an employee, and returns the salary from the newest contract of that employee.
 USE employees;
 DROP FUNCTION IF EXISTS emp_info;
 

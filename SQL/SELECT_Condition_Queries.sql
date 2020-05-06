@@ -488,3 +488,9 @@ FROM
     ORDER BY e.emp_no
     LIMIT 20) AS B;
 
+SELECT 
+    YEAR(from_date) AS calendar_year,
+    COUNT(emp_no) AS num_of_employees
+FROM
+    t_dept_emp
+GROUP BY YEAR(from_date);
